@@ -20,9 +20,7 @@ Animações; <br/>
 
 Transições; <br/>
 
-Novas tags html5 header, nav e footer; <br/>
-
-Novas tags html5 article, section, aside e time; <br/>
+Novas tags html5 header, nav, footer, article, section, aside e time; <br/>
 
 Compatibilidade html5; <br/>
 

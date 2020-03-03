@@ -1,0 +1,29 @@
+#caixa{
+    height: 300px;
+    width: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /*
+    Primeiro valor: superior e inferior
+    Segundo valor: lateral
+    terceiro valor: efeito blur
+    quarto valor: espalhamento da sombra
+    quinto valor: cor
+    */
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+#caixa h1{
+    color: white;
+    /*permite fazer sombras em texto*/
+    /*text-shadow: 5px 5px black;*/
+    /*text-shadow: 5px -5px black;*/
+    /*
+    Primeiro valor: superior e inferior
+    Segundo valor: lateral
+    terceiro valor: efeito blur
+    quarto valor: cor
+    */
+    text-shadow: 5px -5px 10px black;
+}
