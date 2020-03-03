@@ -1,0 +1,51 @@
+/*****************
+Estilo flexbox
+*************/
+
+#conteudo{
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+
+    /*
+    propriedades do flex direction: https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+    - row (itens organizados em linha)
+    - row-reverse
+    - collumn (itens organizados em coluna)
+    - collumn-reverse
+    */
+    flex-direction: row;
+
+    /*consegue definir quebras de layout: https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
+    - nowrap (não haverá quebra do item quando o container diminuir)
+    - wrap (haverá a quebra do item quando o container diminuir)
+    - wrap-reverse
+    */
+    flex-wrap: nowrap;
+
+    /*Define a posição dos itens utilizando o flex : https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+    - flex-start (canto esquerdo topo)
+    - flex-end (canto direito topo)
+    - center (centro topo)
+    - space-between (distribui os itens por toda largura disponível, começando pela extremidade, mantendo espaço igual entre eles)
+    - space-around (distribui os itens por toda largura disponível, mantendo espaço igual entre eles, antes e depois do item)
+    */
+    justify-content: flex-start;
+
+    /*defini o alinhamento dos itens : https://www.w3schools.com/cssref/css3_pr_align-items.asp
+    - stretch
+    - center
+    - flex-start
+    - flex-end
+    - baseline
+    */
+    align-items: baseline;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 1px solid gray;
+    margin: 10px;
+}
