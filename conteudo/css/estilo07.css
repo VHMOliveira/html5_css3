@@ -14,14 +14,14 @@ Estilo flexbox
     - collumn (itens organizados em coluna)
     - collumn-reverse
     */
-    flex-direction: row;
+    /*flex-direction: row;*/
 
     /*consegue definir quebras de layout: https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
     - nowrap (não haverá quebra do item quando o container diminuir)
     - wrap (haverá a quebra do item quando o container diminuir)
     - wrap-reverse
     */
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
 
     /*Define a posição dos itens utilizando o flex : https://www.w3schools.com/cssref/css3_pr_justify-content.asp
     - flex-start (canto esquerdo topo)
@@ -30,7 +30,7 @@ Estilo flexbox
     - space-between (distribui os itens por toda largura disponível, começando pela extremidade, mantendo espaço igual entre eles)
     - space-around (distribui os itens por toda largura disponível, mantendo espaço igual entre eles, antes e depois do item)
     */
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
 
     /*defini o alinhamento dos itens : https://www.w3schools.com/cssref/css3_pr_align-items.asp
     - stretch
@@ -39,7 +39,7 @@ Estilo flexbox
     - flex-end
     - baseline
     */
-    align-items: baseline;
+    /*align-items: baseline;*/
 }
 
 .item{
@@ -48,4 +48,35 @@ Estilo flexbox
     background: white;
     border: 1px solid gray;
     margin: 10px;
+    /*flex-grow: defini a proporção de espaço ocupado por um item
+    o padrão é o 0
+    quando coloca 1, eles passam a ocupar todo espaçamento disponível
+    */
+    flex-grow: 0;
+
+    /*flex-shrink: Define a capacidade de redução de tamanho
+    de um item
+    o padrão é o 1
+    quanto maior o valor, mais o item pode encolher em relação ao tamanho original
+    */
+    flex-shrink: 1;
+
+    /*flex-basis: Indica o tamanho inicial do flex item antes
+    da distribuição do espaço restante;
+    o padrão é auto
+    */
+    flex-basis: auto;
+}
+
+.item1{
+    /*flex-grow: 0.5;*/
+    flex-shrink: 2;
+}
+
+.ordem{
+    /*order: controla a posição do elemento dentro do flex
+    por default todos elementos tem 0 em order
+    se o valor da order é o mesmo, ele segue a ordem de execução no html
+    */
+    order: 0;
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Museu Nacional</title>
+        <meta charset="utf-8">
+
+        <!--Normalize CSS-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!--Estilo customizado-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+            
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        
+        <!--Início do container-->
+        <div id="container">
+
+            <!--início do cabeçalho-->
+            <header>
+
+                <div id="logo">
+                    <h1><a href="">Museu Nacional</a></h1>
+                </div>
+            
+                <!--início da barra de navegação-->
+                <nav>
+
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Exposições</a></li>
+                        <li><a href="">Pesquisa</a></li>
+                        <li><a href="">Acervos</a></li>
+                        <li><a href="">Vídeos</a></li>
+                        <li><a href="">Fotos</a></li>
+                        <li><a href="">Contatos</a></li>
+                    </ul>
+                </nav>
+                <!--fim da barra de navegação-->
+            </header>
+            <!--fim do cabeçalho-->
+
+            <!--Início principal-->
+            <div id="principal">
+
+                <!--início conteúdo-->
+                <div id="conteudo">
+                    
+                    <section id="capa">
+                        <img src="imagens/museu.png">
+                    </section>
+                </div>
+                <!--fim conteúdo-->
+
+                <!--inicio lateral-->
+                <aside>
+                    <!--inicio seção depoimento-->
+                    <section id="depoimento">
+                        <img src="imagens/depoimento.png">
+                    </section>
+                    <!--fim seção depoimento-->
+
+                    <!--inicio seção visita-->
+                    <section id="visita">
+                        <h4>Faça uma visita!</h4>
+                        <form>
+                            <fieldset>
+
+                                <legend>Selecione uma data:</legend>
+                                <label for="data">Data:</label>
+                                <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+                                <label for="qtd">Qtd pessoas:</label>
+                                <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+                            </fieldset>
+
+                            <input class="botao" type="submit" value="Verificar disponibilidade">
+                        </form>
+                    </section>
+                    <!--fim seção visita-->
+
+                    <!--inicio galeria de fotos-->
+                    <section id="galeria">
+                        <h4>Galeria de fotos</h4>
+                        <a href="">
+                            <img src="imagens/imagem1.jpg" height="93" width="93"
+                            alt="descrição imagem 1">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem2.jpg" height="93" width="93"
+                            alt="descrição imagem 2">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem3.jpg" height="93" width="93"
+                            alt="descrição imagem 3">
+                        </a>
+                        <a href="">
+                            <img src="imagens/imagem4.jpg" height="93" width="93"
+                            alt="descrição imagem 4">
+                        </a>
+                    </section>
+                    <!--fim galeria de fotos-->
+                </aside>
+                <!--fim lateral-->
+
+            </div>
+            <!--Fim principal-->
+
+        </div>
+        <!--Fim do container-->
+
+    </body>
+
+</html>
